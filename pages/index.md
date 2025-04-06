@@ -1,22 +1,17 @@
 ---
 layout: default
-title: "Projects"
-description: "I turn protien shake into code, and tabs into clean syntax."
 permalink: /
 ---
 
 {% include landing.html %}
 
 
-
-# 🚧 OOPS!!! My website’s still under construction... hard hats required!
+# 🚧 OOPS! My website’s still under construction... 
 
 ---
----
-
-### In the meantime, go ahead and read all about me!
 
 At the University of Maryland, College Park, I am:
+
 * Designing and simulating 10,000 m² photorealistic off-terrain environments in Isaac Sim for robust multi-robot navigation and swarm planning.
 * Integrating custom-built Husky (AGR) robot with sensors and a Nav2-inspired stack in ROS 2 for visual SLAM and autonomous navigation.
 * Creating testbeds for cobot training with reinforcement learning in IsaacLab, benchmarking policies for manipulation tasks.
@@ -29,3 +24,4 @@ At STEER Tech, I am:
 Previously at Kanan Park Technologies, I:
 * Trained walking controllers for the bipedal Cassie robot in MuJoCo and fine-tuned reinforcement learning policies in robosuite via reward shaping.
 * Prototyped a 3-DoF robotic arm for auto soldering, implementing sensor fusion with Extended Kalman Filters for improved control.
+
