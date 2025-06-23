@@ -1,2 +1,2 @@
 # Portfolio
-This repository contains all the files essential for my portfolio website.
+This portfolio is still under development.
