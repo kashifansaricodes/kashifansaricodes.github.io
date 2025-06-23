@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashif Ansari-Portfolio</title>
+    <!-- Refer Style layout from style.css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Import boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Include 'scroll-animation.js' as seperate module -->
+    <script src="scroll-animation.js" type="module" defer></script>
+    <!-- AOS: Reload Animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- EmailJS Installation -->
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "RkfZ7Lep1JgN2XhFE",
+        });
+    })();
+</script>
+
+</head>
+<body>
+    <!-- 1. Top Scroll Animation -->
+    <!-- <div class="scroll-tracker"></div> -->
+
+    <!-- Create 'container' class -->
+    <div class="container">
+        <!--  Create 'back-vid' class to style background video -->
+        <video class="back-vid" loop autoplay muted plays-inline src="videos/galaxy.mp4" type="video/mp4"></video>
+        
+        <!-- Create a 'header' for your website -->
+        <header class="autoBlur">
+            <!--  'left' class to style left-header -->
+            <div class="left">
+                <!-- <img src="images/<image_link>" alt="logo"> -->
+                <h1 data-aos="fade-down" data-aos-duration="1000"
+                class="logo">Kashif Ansari</h1>
+            </div>
+
+            <!-- Navigation options -->
+            <ul data-aos="fade-down" data-aos-duration="1500">
+                <li><a href="#home">Home</a></li> 
+                <li><a href="#about">About</a></li> 
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+
+            <!-- Box-icons -->
+            <div class="box-icons" data-aos="fade-down" data-aos-duration="2000">
+                <a href="https://www.linkedin.com/in/ansarikashif/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/kashifansaricodes" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.youtube.com/@KashifAnsari-k3d" target="_blank" rel="noopener noreferrer"><i class='bx bxl-youtube' ></i></a>
+            </div>
+            
+        </header>
+
+        <!-- Hero (MAIN) Section -->
+         <section class="hero" id="home">
+            <div class="hero-info">
+                <div 
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                class="hero-info-title">
+                    <i class='bx bxl-sketch' ></i>
+                    ROBOTICS ENGINEER
+                </div>
+
+                <h1
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                >Harnessing <span class="gradient">Robotics</span> 
+                <br/>To Build <span class="gradient">Beyond Limits</span></h1>
+
+                <p
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                data-aos-duration="1000"
+                >I build agile robotic systems, adaptably synergic to mankind, 
+                harnessing AI-driven autonomy and rapid learning to transform ideas into reality, 
+                whether unconventional or ingenious</p>
+
+                <button
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                data-aos-duration="1500"
+                id="contact-btn">
+                    <i class='bx bx-send' ></i>
+                    CONTACT
+                </button>
+            </div>
+
+             <!-- 3D Robot viewer-->
+             <spline-viewer 
+             data-aos="fade-zoom-in"
+             data-aos-easing="ease-in-back"
+             data-aos-delay="300"
+             data-aos-offset="0"
+             data-aos-duration="1000"
+             class="robot-3d"
+             url="https://prod.spline.design/Z0kjhqRUGLmI1lgC/scene.splinecode">
+             </spline-viewer>
+
+            <!-- Scroll-down sign -->
+            <div 
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-duration="1500"
+            class="scroll-down"
+            id="scroll-down"></div>
+         </section>
+
+         <!-- About (INFO) Section -->
+        <section class="info-section" id="about">
+            <h1
+            data-aos="zoom-in-up"
+            data-aos-duration="700"
+            class="section-title">About Me!</h1>
+            <div class="info-cards autoBlur">
+                <!-- About Me Details -->
+                <div class="card">
+                    <h1>Kashif Ansari</h1>
+                    <p>As a Robotics Engineer, I harness robotics to build beyond limits, creating systems that are not just limited to the automation of repetitive tasks but collaborate, adapt, and make decisions across diverse applications.
+                        <br/><br/>With a foundation of extensive research, design, and fabrication, my expertise encompasses autonomous mobility, task/path planning, SLAM, robot perception, and software architecture, primarily focusing on fully or semi-autonomous tele-robotic systems.</p>
+                    <img src="images/profile_pic2.png" alt="card-image">
+
+                    <!-- Download Resume -->
+                    <button
+                    id="viewResume">
+                        <i class='bx bx-file' ></i>
+                        Resume
+                    </button>
+                </div>
+
+                <!-- Why Robotics? -->
+                <div class="card">
+                    <h1>What's Beyond?</h1>
+                    <p>It's not just about programming machines, whether designing an unmanned aerial vehicle for high-precision applications 
+                        or a tabletop gum-shooting robot just for the sake of exploration, 
+                        I presume to extend the boundaries with robotics.</p>
+                    <img src="images/grid1.png" alt="card-image">
+                </div>
+
+                <!-- Give your Personal touch HERE! -->
+                <div class="card">
+                    <h1>My Perspective:</h1>
+                    <p>Robotics is the seamless convergence of engineering, programming, embedded systems, and beyond. 
+                        An interdisciplinary mastery encapsulated in one accessible framework, 
+                        that can take shape even in your living space</p>
+                    <video autoplay loop muted plays-inline src="videos/glob.mp4"
+                        type="video/mp4">
+                    </video>
+                </div>
+
+                <!-- Passion for Robotics HERE! -->
+                <div class="card">
+                    <h1>Expertise</h1>
+                    <p>The cornerstone of my work is rooted in solving complex problems, whether engineering robust autonomy for mobile robots or challenging industry-driven dynamic environments. 
+                        I collaborated with renowned scientists and sublime experts at the prestigious Defense Research & Development Organisation (DRDO) in India, 
+                        where I contributed to cutting-edge autonomous defense aviation, investigating advanced navigation to optimize autonomous launching and target tracking.
+                        <br/><br/>I built agile, robust automation pipeline for dynamic manufacturing systems in the Agile Robotics (ARIAC) challenge. Each hands-on experience and project strengthened and elevated my ability to build adaptable and intelligent systems that thrive in uncertain circumstances.</p>
+                    <!-- <video autoplay loop muted plays-inline src="videos/arm.mp4"
+                        type="video/mp4">
+                    </video> -->
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Expertise (SKILLS) Section -->
+        <section class="skills-section" id="expertise">
+            <h1 
+            data-aos="zoom-in-up"
+            data-aos-duration="700"
+            class="section-title">Technical Expertise</h1>
+            <p 
+            data-aos="zoom-in-up"
+            data-aos-duration="900"
+            >Specialized knowledge and skills in robotics engineering and 
+                <span class="gradient">related technologies</span></p>
+            <div class="skills-cards">
+                <!-- Skill 1 -->
+                <div class="skill fadeInRight">
+                    <i class='bx bx-sitemap' ></i>
+                    <h1>Robotics Development</h1>
+                    <p>Design and implementation of robotics systems including
+                        kinematics, dynamic modelling and controls
+                    </p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="skill autoBlur">
+                    <i class='bx bxl-codepen' ></i>
+                    <h1>Autonomous Systems</h1>
+                    <p>Automating systems with rapid adaptive learning and 
+                        domain specific intelligent decision-making ability</p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill fadeInLeft">
+                    <i class='bx bx-map' ></i>
+                    <h1>SLAM and Navigation</h1>
+                    <p>SLAM and Nav2 stack for real-time environment mapping, 
+                        enabling accurate spatial representation</p>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="skill fadeInRight">
+                    <i class='bx bx-cog' ></i>
+                    <h1>Hardware Integration</h1>
+                    <p>Fabricating embedded hardware and programming 
+                        microcontrollers for robotic control systems
+                    </p>
+                </div>
+
+                <!-- Skill 5 -->
+                <div class="skill autoBlur">
+                    <i class='bx bx-code-alt' ></i>
+                    <h1>ROS Programming</h1>
+                    <p>Expert in Robot Operating System (ROS2) for modular 
+                        and structured robotics software development
+                    </p>
+                </div>
+
+                <!-- Skill 6 -->
+                <div class="skill fadeInLeft">
+                    <i class='bx bxs-brain'></i>
+                    <h1>Ai-Machine Learning</h1>
+                    <p>Application of ML algorithms for adaptive robot learning, 
+                    perception, and decision-making systems
+                    </p>
+                </div>
+            </div>
+
+            <!-- Relevant Technologies Card (SKILL-child:7)-->
+            <div 
+            data-aos="flip-up"
+            data-aos-duration="700"
+            class="tech-cards">
+                <h1 class="gradient">Core Technologies</h1>
+                <!-- Tech 1 -->
+                <div class="tech">
+                    <h2>Programming</h2>
+                    <p>Python, C++, MATLAB, Linux</p>
+                </div>
+
+                <!-- Tech 2 -->
+                <div class="tech">
+                    <h2>Frameworks</h2>
+                    <p>ROS2, OpenCV, TensorFlow</p>
+                </div>
+
+                <!-- Tech 3 -->
+                <div class="tech">
+                    <h2>Tools</h2>
+                    <p>Gazebo, MoveIt, SolidWorks, Simulink</p>
+                </div>
+
+                <!-- Tech 4 -->
+                <div class="tech">
+                    <h2>Hardware</h2>
+                    <p>Arduino, Raspberry Pi, Pixhawk</p>
+                </div>
+            </div>
+
+            <!-- Technologies Slider -->
+            <div class="slider" reverse="true" style="
+                --width: 100px;
+                --height: 100px;
+                --quantity: 10;
+            ">
+                <div class="list">
+                <div class="item" style="--position: 1"><img src="images/1.png" alt=""></div>
+                <div class="item" style="--position: 2"><img src="images/2.png" alt=""></div>
+                <div class="item" style="--position: 3"><img src="images/3.png" alt=""></div>
+                <div class="item" style="--position: 4"><img src="images/4.png" alt=""></div>
+                <div class="item" style="--position: 5"><img src="images/5.png" alt=""></div>
+                <div class="item" style="--position: 6"><img src="images/6.png" alt=""></div>
+                <div class="item" style="--position: 7"><img src="images/7.png" alt=""></div>
+                <div class="item" style="--position: 8"><img src="images/8.png" alt=""></div>
+                <div class="item" style="--position: 9"><img src="images/9.png" alt=""></div>
+                <div class="item" style="--position: 10"><img src="images/10.png" alt=""></div>
+                </div>
+            </div>
+
+        </section>
+        
+
+        
+        <!-- Project (MY PROJECT) Section -->
+        <section class="my-projects" id="projects">
+            <h1 
+            data-aos="zoom-in-up"
+            data-aos-duration="700"
+            class="section-title">Featured Projects</h1>
+            <p
+            data-aos="zoom-in-up"
+            data-aos-duration="900"
+            >Showcasing innovative robotics projetcs that demostrate 
+                technical expertise and <span class="gradient">problem-solving abilites</span></p>
+            
+            <div class="filter-buttons autoBlur">
+                <button class="filter-btn active" data-filter="all">All</button>
+            </div>
+            
+            <section 
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            class="projects">
+                <!-- Project 1 -->
+                <!-- <div class="project-card">
+                    <div class="project-vidbox">
+                        <video id="projectVideo1" src="videos/rover.mp4"></video>
+                    </div>
+                    <div class="project-info">
+                        <h1>Project 1 Name <span class="gradient">HERE!</span></h1>
+                        <p>Project Description HERE!</p>
+                        <button><i class='bx bx-link-external' ></i> Website</button>
+                    </div>
+                </div> -->
+
+                <!-- Project 2 -->
+                <!-- <div class="project-card">
+                    <div class="project-vidbox">
+                        <video id="projectVideo2" src="videos/rover.mp4"></video>
+                    </div>
+                    <div class="project-info">
+                        <h1>Project 2 Name <span class="gradient">HERE!</span></h1>
+                        <p>Project Description HERE!</p>
+                        <button><i class='bx bx-link-external' ></i> Website</button>
+                    </div>
+                </div> -->
+
+                <!-- Project 3 -->
+                <!-- <div class="project-card">
+                    <div class="project-vidbox">
+                        <video id="projectVideo3" src="videos/rover.mp4"></video>
+                    </div>
+                    <div class="project-info">
+                        <h1>Project 3 Name <span class="gradient">HERE!</span></h1>
+                        <p>Project Description HERE!</p>
+                        <button><i class='bx bx-link-external' ></i> Website</button>
+                    </div>
+                </div> -->
+            </section>
+            
+        </section>
+
+
+        <!-- Experience Section -->
+        <section class="experience-section" id="experience">
+            <h1 
+            data-aos="zoom-in-up"
+            data-aos-duration="700"
+            class="section-title">Professional Experience</h1>
+            <p
+            data-aos="zoom-in-up"
+            data-aos-duration="900"
+            >Career highlights and professional contributions 
+                in the field of robotics and 
+                <span class="gradient">automation engineering</span></p>
+
+            <!-- Image Slide Show -->
+            <div class="slide-content autoBlur">
+                <div class="slide-container">
+                    <img src="images/exp1.png" alt="Img1" class="mySlides">
+                    <img src="images/exp2.jpg" alt="Img2" class="mySlides">
+                    <img src="images/exp3.jpeg" alt="Img3" class="mySlides">
+                    <img src="images/exp4.jpeg" alt="Img4" class="mySlides">
+                </div>
+
+                <div class="slide-controls autoBlur">
+                    <!-- Click LEFT - RIGHT -->
+                    <div class="slide-left" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="slide-right" onclick="plusDivs(1)">&#10095;</div>
+                    <!-- Clieck Img INDICATORS -->
+                    <span class="slide-badge demo" onclick="currentDiv(1)"></span>
+                    <span class="slide-badge demo" onclick="currentDiv(2)"></span>
+                    <span class="slide-badge demo" onclick="currentDiv(3)"></span>
+                    <span class="slide-badge demo" onclick="currentDiv(4)"></span>
+                </div>
+            </div>
+
+            <section class="experience-info">
+                <h2 class="autoBlur">Defense Research and Development Organisation (DRDO) - Hyderabad, India</h2>
+                <h3 class="autoBlur">Internship, May 2022 - June 2022</h3>
+                <div class="role autoBlur">
+                    <p>Internship in one of the finest organisation, Defence R&D Organisation for the project, 
+                        titled 'Design of Power Switching Circuits' of a surface-to-surface ballistic missile, 
+                        PRALAY, that has given Me a perspective about the research prospects unexplored 
+                        in the field of defence airborne ranged weapons and avionics.</p>
+                    <p>Investigated power switching circuit to conscientiously monitor and 
+                        automate the pyro-bolt to accurately ignite from an autonomous launcher and 
+                        manoeuvre over a range of 350-500Kms, reducing human intervention 
+                        by 100% after launch.</p>
+                    <p> Assisted on Inertial Navigation System (INS) and 
+                        On-Board Computer (OBC) for localization and 
+                        controls, reaching over 99.98% accuracy 
+                        by minimizing the Circular Error Probability (CEP) 
+                        to less than 10 meters.</p>
+                </div>
+                <div class="weblinks autoBlur">
+                    <button id="drdo-cert"><i class='bx bx-certification' ></i> Certificate</button>
+                    <button id="drdo-report"><i class='bx bxs-report' ></i> Full Report</button>
+                </div>
+            </section>
+            
+        </section>
+
+        
+        <!-- CONTACT Section -->
+        <section class="contact-section" id="contact">
+            <h1 
+            data-aos="zoom-in-up"
+            data-aos-duration="700"
+            class="section-title">Get In Touch</h1>
+            <div class="sub">
+                <p
+                data-aos="zoom-in-up"
+                data-aos-duration="900"
+                >Have a research oppurtunity | project idea - Smart or Stupid? 
+                    Let's build something 
+                    <span class="gradient">NEW!</span> 🚀
+                </p>
+            </div>
+            
+
+            <!-- Contact Information - Send a Message (COLUMN) -->
+            <div class="column-cards">
+                <!-- Contact Information -->
+                <div class="contact-cards">
+                    <h2 class="autoBlur">Contact Information</h2>
+                    <!-- Email -->
+                    <div class="contact autoBlur" id="sendEmail">
+                        <a href="mailto:kashif.ibha@gmail.com">
+                            <i class='bx bx-envelope' ></i>
+                            <h3>Email</h3>
+                            <h4>kashif.ibha@gmail.com</h4>  
+                        </a>
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div class="contact autoBlur" id="viewLinkedIn">
+                        <a href="https://www.linkedin.com/in/ansarikashif/">
+                            <i class='bx bxl-linkedin-square' ></i>
+                            <h3>LinkedIn</h3>
+                            <h4>linkedin.com/in/ansarikashif</h4>
+                        </a>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="contact autoBlur" id="viewGitHub">
+                        <a href="https://github.com/kashifansaricodes">
+                            <i class='bx bxl-github' ></i>
+                            <h3>GitHub</h3>
+                            <h4>github.com/kashifansaricodes</h4>
+                        </a>
+                    </div>
+
+                    <!-- Resume -->
+                    <div class="contact autoBlur" id="viewResume">
+                            <i class='bx bxs-cloud-download' ></i>
+                            <h3>Resume</h3>
+                            <h4>Download Full Resume</h4>
+                    </div>
+
+                    <!-- Location -->
+                    <div 
+                    class="location">
+                        <h5>Current Location</h5>
+                        <h6>College Park, Maryland, United States</h6>
+                        <p>Available for remote collaboration and featured on-site projects</p>
+                    </div>
+                </div>
+
+                <!-- Send a Message -->
+                <div 
+                data-aos="flip-down"
+                data-aos-duration="1000"
+                class="message-cards autoBlur">
+                    <h2>Send a Message</h2>
+
+                    <form 
+                    id="contactForm">
+                        <!-- Name -->
+                        <div class="form-message">
+                            <h3>Name</h3>
+                            <input type="text" id="name" name="name" placeholder="Your name"
+                            required class="form-control">
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-message">
+                            <h3>Email</h3>
+                            <input type="email" id="email" name="email" placeholder="Your email address"
+                            required class="form-control">
+                        </div>
+
+                        <!-- Subject -->
+                        <div class="form-message">
+                            <h3>Subject</h3>
+                            <input type="text" id="subject" name="subject" placeholder="Message subject"
+                            required class="form-control">
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-message">
+                            <h3>Message</h3>
+                            <textarea name="message" id="message" placeholder="Your message here..."
+                            required class="form-control"></textarea>
+                        </div>
+
+                        <!-- Send Button -->
+                        <button 
+                        onclick="sendMail()"
+                        type="submit" id="submitBtn" class="message-btn"><i class='bx bx-send' ></i> Send Message</button>
+                    
+                        <p id="successMessage">I'll get back to you soon!</p>
+
+                        <!-- <div class="success-message" id="successMessage">
+                            Message launched successfully!
+                        </div> -->
+                    </form>
+                   
+                </div>
+            </div>
+        </section>
+       
+        <!-- Footer -->
+        <footer>
+            <div 
+            class="foot-1">
+                <h1>Kashif Ansari</h1>
+                <h2>Robotics Engineer | M.Engg Robotics</h2>   
+            </div>
+
+            <div class="foot-2">
+                <p>© 2025 Kashif Ansari. All rights reserved.</p>
+                <p>Made with HTML, CSS, JS & Spline</p>
+            </div>
+        </footer>
+    
+    </div>
+
+    <!-- Robot 3D script -->
+    <script type="module" 
+    src="https://unpkg.com/@splinetool/viewer@1.10.7/build/spline-viewer.js">
+    </script> 
+
+    <!-- app.js -->
+    <script src="app.js"></script>
+
+    <!-- Reload Animations -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- YouTube IFrame API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
