@@ -30,7 +30,7 @@ const projects = [
         // Technologies (FILTER)
         technologies: ["ROS", "Python", "Computer Vision", "MoveIt", "Software Architecture", "Agile Robotics", "Manufacturing Robots", "Sensor Fusion"],
         // GitHub URL
-        web_url: "https://github.com/HamsaavarthanR/ENPM663-Building-a-Manufacturing-Robot-Software-System"
+        web_url: "https://github.com/kashifansaricodes/OCR-VLM-Based-Vision-Guided-Navigation"
     },
     {
         // Project ID
@@ -44,7 +44,7 @@ const projects = [
         // Technologies (FILTER)
         technologies: ["Python", "ROS", "SLAM", "Control Theory", "Computer Vision", "Nav2 Stack"],
         // GitHub URL
-        web_url: "https://github.com/HamsaavarthanR/ENPM605-Python-Applications-for-Robotics"
+        web_url: "https://github.com/kashifansaricodes/Multi-Robot-Autonomous-Robot-System"
     },
     {
         // Project ID
@@ -58,7 +58,7 @@ const projects = [
         // Technologies (FILTER)
         technologies: ["Python", "CAD", "ROS", "Dynamics", "Robot Modelling", "Control Theory"],
         // GitHub URL
-        web_url: "https://github.com/HamsaavarthanR/Modelling_Mobile_7DoF_Agriculture_Robot"
+        web_url: "https://github.com/kashifansaricodes/Robot-Learning-Bipedal-Footstep-PID-MPC"
     },
     {
         // Project ID
@@ -72,7 +72,7 @@ const projects = [
         // Technologies (FILTER)
         technologies: ["Python", "Computer Vision", "TensorFlow", "Deep Learning"],
         // GitHub URL
-        web_url: "https://github.com/HamsaavarthanR/Point-Cloud-based-3D-Object-Detection-Using-Voxel-Net-with-ROI-Pooling"
+        web_url: "https://github.com/"
     },
     {
         // Project ID
@@ -86,7 +86,7 @@ const projects = [
         // Technologies (FILTER)
         technologies: ["Python", "Computer Vision", "Sensor Fusion", "Control Theory", "Embedded Programming", "Raspberry Pi"],
         // GitHub URL
-        web_url: "https://github.com/HamsaavarthanR/BERLIN---The-Autonomous-Robot"
+        web_url: "https://github.com/"
     },
     {
         // Project ID
@@ -100,7 +100,7 @@ const projects = [
         // Technologies (FILTER)
         technologies: ["Python", "Computer Vision"],
         // GitHub URL
-        web_url: "https://github.com/HamsaavarthanR/Parking-Assistance-Using-Homography"
+        web_url: "https://github.com/"
     },
     {
         // Project ID
@@ -114,7 +114,7 @@ const projects = [
         // Technologies (FILTER)
         technologies: ["Python", "CAD", "ROS", "Dynamics", "Robot Modelling", "Control Theory"],
         // GitHub URL
-        web_url: "https://github.com/HamsaavarthanR/Build-your-own-Truck-Trailer-CAD-Modelling-and-ROS2-Gazebo-Simulation"
+        web_url: "https://github.com/"
     },
     {
         // Project ID
@@ -128,7 +128,7 @@ const projects = [
         // Technologies (FILTER)
         technologies: ["Python", "Path Planning"],
         // GitHub URL
-        web_url: "https://github.com/HamsaavarthanR/Bi-RRT-Path-Planning-Algorithm-for-Large-scale-Apple-Picking-Robot"
+        web_url: "https://github.com/"
        },
 ]
 
